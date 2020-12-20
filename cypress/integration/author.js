@@ -5,9 +5,10 @@
 
 describe("Test the dealersearch in current live app", () => {
     it("find a dealer in Dresden who sells used cars", () => {
-        cy.visit("https://www.volkswagen.de/app/haendlersuche/vw-de/de");
-        cy.get('#bannerAcceptButton').click();
-        cy.get('.StyledInput-sc-7giqxg')
+        cy.visit("http://localhost:3001/app/dccsearch/vw-de/de");
+       // cy.get('#bannerAcceptButton').click();
+       cy.get('#customButton').click();
+       cy.get('.StyledInput-sc-irus8s')
         .wait(1000)
         .type("Dresden")
         .wait(2000)
