@@ -1,0 +1,107 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-12-28T12:08:41.293Z",
+    "end": "2020-12-28T12:08:43.388Z",
+    "duration": 2095,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "d4b6831c-b3af-4833-a3e0-488eaf4c55e5",
+      "title": "",
+      "fullFile": "cypress/integration/webdriver-uni/dropdown.js",
+      "file": "cypress/integration/webdriver-uni/dropdown.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "6f55fa59-bb87-4b3f-b16b-211b681fc1ce",
+          "title": "Test dropdowns via webdriveruni",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "select specific values via dropdown list",
+              "fullTitle": "Test dropdowns via webdriveruni select specific values via dropdown list",
+              "timedOut": null,
+              "duration": 2042,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"http://webdriveruniversity.com\");\ncy.get(\"#dropdown-checkboxes-radiobuttons\").invoke(\"removeAttr\", \"target\").click({\n  force: true\n});\ncy.get('#dropdowm-menu-1').select('c#');\ncy.get('#dropdowm-menu-2').select('testng').should('have.value', 'testng'); //based on value\ncy.get('#dropdowm-menu-3').select('CSS').contains('CSS'); //based on text itself\ncy.get('#dropdowm-menu-2').select('Maven').contains('Maven');\ncy.get('#dropdowm-menu-2').select('maven').should('have.value', 'maven');",
+              "err": {},
+              "uuid": "d7ac80c2-8933-44b3-ab38-5bf9b8bf678c",
+              "parentUUID": "6f55fa59-bb87-4b3f-b16b-211b681fc1ce",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "d7ac80c2-8933-44b3-ab38-5bf9b8bf678c"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2042,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/results/mochawesome",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-12-28T12:09:12.433Z",
+    "end": "2020-12-28T12:09:13.427Z",
+    "duration": 994,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "04f78974-6c2d-4411-9c0a-b166e159b21c",
+      "title": "",
+      "fullFile": "cypress/integration/webdriver-uni/traversing-elements.js",
+      "file": "cypress/integration/webdriver-uni/traversing-elements.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "4b9eeccc-9c1f-4c67-b64b-ac9c41d2220f",
+          "title": "Traversing DOM elements in Cypress",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "find() to retrieve DOM elements of a given selector",
+              "fullTitle": "Traversing DOM elements in Cypress find() to retrieve DOM elements of a given selector",
+              "timedOut": null,
+              "duration": 962,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('.traversal-pagination').find('li').find('a').should('have.length', 7);",
+              "err": {},
+              "uuid": "7ae591c2-07b8-418a-80e8-a84686963a63",
+              "parentUUID": "4b9eeccc-9c1f-4c67-b64b-ac9c41d2220f",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "7ae591c2-07b8-418a-80e8-a84686963a63"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 962,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/results/mochawesome",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}

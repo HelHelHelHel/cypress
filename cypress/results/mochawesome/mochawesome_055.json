@@ -1,0 +1,145 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-12-28T15:44:00.969Z",
+    "end": "2020-12-28T15:44:10.801Z",
+    "duration": 9832,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "c643806c-bcc9-4527-9d3b-19026d2a707e",
+      "title": "",
+      "fullFile": "cypress/integration/automation-test-store/iterate-over-elements.js",
+      "file": "cypress/integration/automation-test-store/iterate-over-elements.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "f73a3abc-554f-4cc0-bd22-994e2383d65e",
+          "title": "iterate over elements",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "log information of all hair care products",
+              "fullTitle": "iterate over elements log information of all hair care products",
+              "timedOut": null,
+              "duration": 5353,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.selectProduct('Curls to straight Shampoo');",
+              "err": {},
+              "uuid": "f2f2ae5e-d670-4661-8298-e6fab05465b4",
+              "parentUUID": "f73a3abc-554f-4cc0-bd22-994e2383d65e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "add another product to basket",
+              "fullTitle": "iterate over elements add another product to basket",
+              "timedOut": null,
+              "duration": 1465,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.selectProduct('Seaweed Conditioner');",
+              "err": {},
+              "uuid": "d6c02847-425c-4905-ad5d-996575134f6f",
+              "parentUUID": "f73a3abc-554f-4cc0-bd22-994e2383d65e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "add another product to basket",
+              "fullTitle": "iterate over elements add another product to basket",
+              "timedOut": null,
+              "duration": 1768,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.selectProduct('Eau Parfumee au The Vert Shampoo');",
+              "err": {},
+              "uuid": "979ff41c-c6e6-47bf-8695-45f6e57304bb",
+              "parentUUID": "f73a3abc-554f-4cc0-bd22-994e2383d65e",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "f2f2ae5e-d670-4661-8298-e6fab05465b4",
+            "d6c02847-425c-4905-ad5d-996575134f6f",
+            "979ff41c-c6e6-47bf-8695-45f6e57304bb"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 8586,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/results/mochawesome",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}

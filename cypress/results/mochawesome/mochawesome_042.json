@@ -1,0 +1,107 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-12-28T15:06:19.765Z",
+    "end": "2020-12-28T15:06:21.453Z",
+    "duration": 1688,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "437ab7d3-bb43-49bb-942c-072dc97fce61",
+      "title": "",
+      "fullFile": "cypress/integration/webdriver-uni/datepicker.js",
+      "file": "cypress/integration/webdriver-uni/datepicker.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "07ea3a8c-724c-4adb-8578-0eed19d001e3",
+          "title": "Test Datepicker via webdriveruni",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Select date from the datepicker",
+              "fullTitle": "Test Datepicker via webdriveruni Select date from the datepicker",
+              "timedOut": null,
+              "duration": 611,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"http://webdriveruniversity.com\");\ncy.get(\"#datepicker\").invoke(\"removeAttr\", \"target\").click({\n  force: true\n});\nvar date = new Date();\ndate.setDate(date.getDate());\ncy.log(date.getDate()); //get current day\nvar date2 = new Date();\ndate2.setDate(date.getDate() + 5);\ncy.log(date2.getDate()); //get current day",
+              "err": {},
+              "uuid": "49841c6d-a2b9-4b35-905b-3911cf212685",
+              "parentUUID": "07ea3a8c-724c-4adb-8578-0eed19d001e3",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "49841c6d-a2b9-4b35-905b-3911cf212685"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 611,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/results/mochawesome",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}

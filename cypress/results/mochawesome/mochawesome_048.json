@@ -1,0 +1,126 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-12-28T15:06:50.626Z",
+    "end": "2020-12-28T15:06:52.445Z",
+    "duration": 1819,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "c52fa3fe-c4fb-4d9b-9c2d-2abf85f8943b",
+      "title": "",
+      "fullFile": "cypress/integration/webdriver-uni/radiobuttons.js",
+      "file": "cypress/integration/webdriver-uni/radiobuttons.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "b9492729-f907-4681-971d-8c6b793d14b7",
+          "title": "Test contact us form via webdriveruni",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should be able to do a successful submission via contact us form",
+              "fullTitle": "Test contact us form via webdriveruni should be able to do a successful submission via contact us form",
+              "timedOut": null,
+              "duration": 669,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('#radio-buttons > input[value=\"blue\"]').check();",
+              "err": {},
+              "uuid": "16925808-32a8-4573-a54f-41b3c1616326",
+              "parentUUID": "b9492729-f907-4681-971d-8c6b793d14b7",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "validate the states of specific radiobuttons",
+              "fullTitle": "Test contact us form via webdriveruni validate the states of specific radiobuttons",
+              "timedOut": null,
+              "duration": 143,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('input[value=\"lettuce\"]').should('not.be.checked'); //cy.get('[value=\"cabagge\"]').should('be.disabled');\ncy.get('input[value=\"pumpkin\"]').should('be.checked');\ncy.get('input[value=\"lettuce\"]').check().should('be.checked');\ncy.get('input[value=\"pumpkin\"]').should('not.be.checked');\ncy.get('#radio-buttons-selected-disabled > :nth-child(3)').should('be.disabled');",
+              "err": {},
+              "uuid": "f6425cc1-9a67-40ac-8f35-7b201ea76883",
+              "parentUUID": "b9492729-f907-4681-971d-8c6b793d14b7",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "16925808-32a8-4573-a54f-41b3c1616326",
+            "f6425cc1-9a67-40ac-8f35-7b201ea76883"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 812,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/results/mochawesome",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}

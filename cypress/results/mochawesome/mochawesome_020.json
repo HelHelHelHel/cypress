@@ -1,0 +1,164 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 4,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-12-28T12:08:56.625Z",
+    "end": "2020-12-28T12:08:59.111Z",
+    "duration": 2486,
+    "testsRegistered": 4,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "09090894-efc0-4554-8726-36ec70205245",
+      "title": "",
+      "fullFile": "cypress/integration/webdriver-uni/js-alerts.js",
+      "file": "cypress/integration/webdriver-uni/js-alerts.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "f972ad2e-73d3-4a67-baa4-636c0674c1b9",
+          "title": "Hadle js alerts",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "confirm js alert contains the correct text",
+              "fullTitle": "Hadle js alerts confirm js alert contains the correct text",
+              "timedOut": null,
+              "duration": 1046,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//cy.visit(\"http://webdriveruniversity.com/Contact-Us/contactus.html\");\ncy.visit(\"http://webdriveruniversity.com\");\ncy.get(\"#popup-alerts\").invoke(\"removeAttr\", \"target\").click({\n  force: true\n});\ncy.get('#button1').click();\ncy.on('window:alert', function (str) {\n  expect(str).to.equal(\"I am an alert box!\");\n});",
+              "err": {},
+              "uuid": "d4234ebb-7bed-4623-85fb-9e7eca8f2b5a",
+              "parentUUID": "f972ad2e-73d3-4a67-baa4-636c0674c1b9",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "validate js confirm alert box works correctly when clicking ok",
+              "fullTitle": "Hadle js alerts validate js confirm alert box works correctly when clicking ok",
+              "timedOut": null,
+              "duration": 495,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//cy.visit(\"http://webdriveruniversity.com/Contact-Us/contactus.html\");\ncy.visit(\"http://webdriveruniversity.com\");\ncy.get(\"#popup-alerts\").invoke(\"removeAttr\", \"target\").click({\n  force: true\n});\ncy.get('#button4').click();\ncy.on('window:confirm', function (str) {\n  return true;\n});\ncy.get;\ncy.get('#confirm-alert-text').contains('You pressed OK');",
+              "err": {},
+              "uuid": "afd4cfd6-27a3-4254-8dcb-396c6cda56ad",
+              "parentUUID": "f972ad2e-73d3-4a67-baa4-636c0674c1b9",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "validate js confirm alert box works correctly when clicking cancel",
+              "fullTitle": "Hadle js alerts validate js confirm alert box works correctly when clicking cancel",
+              "timedOut": null,
+              "duration": 434,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//cy.visit(\"http://webdriveruniversity.com/Contact-Us/contactus.html\");\ncy.visit(\"http://webdriveruniversity.com\");\ncy.get(\"#popup-alerts\").invoke(\"removeAttr\", \"target\").click({\n  force: true\n});\ncy.get('#button4').click();\ncy.on('window:confirm', function (str) {\n  return false;\n});\ncy.get;\ncy.get('#confirm-alert-text').contains('You pressed Cancel!');",
+              "err": {},
+              "uuid": "0615b270-db07-4434-aced-cea43b012c36",
+              "parentUUID": "f972ad2e-73d3-4a67-baa4-636c0674c1b9",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "validate js confirm alert box using a stub",
+              "fullTitle": "Hadle js alerts validate js confirm alert box using a stub",
+              "timedOut": null,
+              "duration": 467,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//cy.visit(\"http://webdriveruniversity.com/Contact-Us/contactus.html\");\ncy.visit(\"http://webdriveruniversity.com\");\ncy.get(\"#popup-alerts\").invoke(\"removeAttr\", \"target\").click({\n  force: true\n});\nvar stub = cy.stub();\ncy.on('window:confirm', stub);\ncy.get('#button4').click().then(function () {\n  expect(stub.getCall(0)).to.be.calledWith('Press a button!');\n}).then(function () {\n  return true;\n}).then(function () {\n  cy.get('#confirm-alert-text').contains('You pressed OK');\n});",
+              "err": {},
+              "uuid": "2f4252af-af31-4475-b831-c932d66362c8",
+              "parentUUID": "f972ad2e-73d3-4a67-baa4-636c0674c1b9",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "d4234ebb-7bed-4623-85fb-9e7eca8f2b5a",
+            "afd4cfd6-27a3-4254-8dcb-396c6cda56ad",
+            "0615b270-db07-4434-aced-cea43b012c36",
+            "2f4252af-af31-4475-b831-c932d66362c8"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2442,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/results/mochawesome",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}

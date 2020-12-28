@@ -1,0 +1,107 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-12-28T12:07:54.918Z",
+    "end": "2020-12-28T12:07:55.027Z",
+    "duration": 109,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "0a8a94f1-f567-4d6a-b6b1-7a688dc40b7b",
+      "title": "",
+      "fullFile": "cypress/integration/other/json.js",
+      "file": "cypress/integration/other/json.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "faa89a56-e1de-4e2f-b092-efb8608dfb44",
+          "title": "JSON object",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "json object examples",
+              "fullTitle": "JSON object json object examples",
+              "timedOut": null,
+              "duration": 66,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var exampleObject = {\n  \"key\": \"Tim\",\n  \"key2\": \"Jones\"\n};\ncy.log(exampleObject[\"key\"]);\ncy.log(exampleObject[\"key2\"]);\ncy.log(exampleObject.key2);",
+              "err": {},
+              "uuid": "3922ad65-1a35-4fc2-b263-140dca6ec8ed",
+              "parentUUID": "faa89a56-e1de-4e2f-b092-efb8608dfb44",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "3922ad65-1a35-4fc2-b263-140dca6ec8ed"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 66,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/results/mochawesome",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}

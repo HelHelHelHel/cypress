@@ -1,9 +1,21 @@
 {
-    "viewportWidth": 1200,
-    "viewportHeight": 800,
-    "chromeWebSecurity": false, 
-    "defaultCommandTimeout": 10000,
-    "pageLoadTimeout": 30000
-    
+  "baseUrl": "http://webdriveruniversity.com",
+  "viewportWidth": 1200,
+  "viewportHeight": 800,
+  "chromeWebSecurity": false,
+  "defaultCommandTimeout": 10000,
+  "pageLoadTimeout": 30000,
+  "retries": {
+    "runMode": 1,
+    "openMode": 1
+  },
+  "env": {
+    "first_name": "Sarah",
+    "webdriveruni_homepage": "http://webdriveruniversity.com"
+  },
+  "projectId": "yd3isk",
+    "reporter": "cypress-multi-reporters",
+    "reporterOptions": {
+      "configFile": "reporter-config.json"
+    }
 }
-

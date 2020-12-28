@@ -1,0 +1,150 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2020-12-28T15:02:10.098Z",
+    "end": "2020-12-28T15:02:11.114Z",
+    "duration": 1016,
+    "testsRegistered": 3,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 2,
+    "hasSkipped": true
+  },
+  "results": [
+    {
+      "uuid": "c738a943-948a-4023-b5a0-731ccbfb338f",
+      "title": "",
+      "fullFile": "cypress/integration/webdriver-uni/checkboxes.js",
+      "file": "cypress/integration/webdriver-uni/checkboxes.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "1db7fbc6-28b6-47c7-94fd-08dd6eadb51a",
+          "title": "verify checkboxes via webdriveruni",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "check and validate checkbox",
+              "fullTitle": "verify checkboxes via webdriveruni check and validate checkbox",
+              "timedOut": null,
+              "duration": 945,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "//cy.get('#checkboxes > :nth-child(1) > input').check().should('be.checked')\ncy.get('#checkboxes > :nth-child(1) > input').as('option-1');\ncy.get('@option-1').check().should('be.checked');",
+              "err": {
+                "message": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://automationteststore.com/Dropdown-Checkboxes-RadioButtons/index.html\n\nThe response we received from your web server was:\n\n  > 404: Not Found\n\nThis was considered a failure because the status code was not `2xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `verify checkboxes via webdr...`",
+                "estack": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://automationteststore.com/Dropdown-Checkboxes-RadioButtons/index.html\n\nThe response we received from your web server was:\n\n  > 404: Not Found\n\nThis was considered a failure because the status code was not `2xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `verify checkboxes via webdr...`\n    at https://automationteststore.com/__cypress/runner/cypress_runner.js:157784:25\n    at visitFailedByErr (https://automationteststore.com/__cypress/runner/cypress_runner.js:157160:12)\n    at https://automationteststore.com/__cypress/runner/cypress_runner.js:157764:13\n    at tryCatcher (https://automationteststore.com/__cypress/runner/cypress_runner.js:10584:23)\n    at Promise._settlePromiseFromHandler (https://automationteststore.com/__cypress/runner/cypress_runner.js:8519:31)\n    at Promise._settlePromise (https://automationteststore.com/__cypress/runner/cypress_runner.js:8576:18)\n    at Promise._settlePromise0 (https://automationteststore.com/__cypress/runner/cypress_runner.js:8621:10)\n    at Promise._settlePromises (https://automationteststore.com/__cypress/runner/cypress_runner.js:8697:18)\n    at _drainQueueStep (https://automationteststore.com/__cypress/runner/cypress_runner.js:5291:12)\n    at _drainQueue (https://automationteststore.com/__cypress/runner/cypress_runner.js:5284:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://automationteststore.com/__cypress/runner/cypress_runner.js:5300:5)\n    at Async.drainQueues (https://automationteststore.com/__cypress/runner/cypress_runner.js:5170:14)\nFrom Your Spec Code:\n    at Context.eval (https://automationteststore.com/__cypress/tests?p=cypress/support/index.js:635:6)",
+                "diff": null
+              },
+              "uuid": "5e040090-f187-4004-b9d0-adc97169d7c4",
+              "parentUUID": "1db7fbc6-28b6-47c7-94fd-08dd6eadb51a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "uncheck and validate checkbox",
+              "fullTitle": "verify checkboxes via webdriveruni uncheck and validate checkbox",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//cy.get('#checkboxes > :nth-child(1) > input').as('option-1');\n//cy.get('@option-1').uncheck().should('not.be.checked');\ncy.get('#checkboxes > :nth-child(5) > input').as('option-3');\ncy.get('@option-3').uncheck().should('not.be.checked');",
+              "err": {},
+              "uuid": "2d715a10-7a12-46c8-ad51-880bea76d153",
+              "parentUUID": "1db7fbc6-28b6-47c7-94fd-08dd6eadb51a",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "check multiple checkboxes",
+              "fullTitle": "verify checkboxes via webdriveruni check multiple checkboxes",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(\"input[type='checkbox']\").check([\"option-1\", \"option-2\", \"option-3\", \"option-4\"]).should('be.checked');",
+              "err": {},
+              "uuid": "b83598e7-ed77-4650-a52b-29ab049636d5",
+              "parentUUID": "1db7fbc6-28b6-47c7-94fd-08dd6eadb51a",
+              "isHook": false,
+              "skipped": true
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "5e040090-f187-4004-b9d0-adc97169d7c4"
+          ],
+          "pending": [],
+          "skipped": [
+            "2d715a10-7a12-46c8-ad51-880bea76d153",
+            "b83598e7-ed77-4650-a52b-29ab049636d5"
+          ],
+          "duration": 945,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/results/mochawesome",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}

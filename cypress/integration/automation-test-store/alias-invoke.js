@@ -51,7 +51,7 @@ describe("alias and invoke", () => {
         })
         .then(() => {
             cy.log("The total price of all products: " + itemsTotal)
-            expect(itemsTotal).to.equal(664)
+            expect(itemsTotal).to.equal(652.6)
         })
         });
     }); 
